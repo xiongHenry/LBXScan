@@ -11,23 +11,14 @@
 #import "LBXScanTypes.h"
 
 //UI
-#ifdef LBXScan_Define_UI
 #import "LBXScanView.h"
-#endif
 
-
-#ifdef LBXScan_Define_Native
 #import "LBXScanNative.h" //原生扫码封装
-#endif
 
-#ifdef LBXScan_Define_ZXing
 #import "ZXingWrapper.h" //ZXing扫码封装
-#endif
 
-#ifdef LBXScan_Define_ZBar
 #import "ZBarSDK.h"
 #import "LBXZBarWrapper.h"//ZBar扫码封装
-#endif
 
 
 typedef NS_ENUM(NSInteger, SCANLIBRARYTYPE) {
